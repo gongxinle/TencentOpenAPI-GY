@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TencentOpenAPI-GY'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of TencentOpenAPI-GY.'
+  s.version          = '3.5.14'
+  s.summary          = 'TencentOpenAPI person pod.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,23 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/龚新乐/TencentOpenAPI-GY'
+  s.homepage         = 'https://wiki.connect.qq.com'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '龚新乐' => 'gongxinle@gyyx.cn' }
-  s.source           = { :git => 'https://github.com/龚新乐/TencentOpenAPI-GY.git', :tag => s.version.to_s }
+  s.author           = { 'gxl' => 'gongxinle@gyyx.cn' }
+  s.source           = { :git => 'https://github.com/gongxinle/TencentOpenAPI-GY.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'TencentOpenAPI-GY/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'TencentOpenAPI-GY' => ['TencentOpenAPI-GY/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks   = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony', 'WebKit'
+  s.libraries             = 'iconv', 'sqlite3', 'stdc++', 'z'
+  s.resource              = 'TencentOpenAPI/TencentOpenApi_IOS_Bundle.bundle'
+  s.vendored_frameworks   = 'TencentOpenAPI/TencentOpenAPI.framework'
+  s.pod_target_xcconfig   = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.requires_arc          = true
+  
 end

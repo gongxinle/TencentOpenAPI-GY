@@ -1,0 +1,16 @@
+PODS:
+  - TencentOpenAPI-GY (3.5.14)
+
+DEPENDENCIES:
+  - TencentOpenAPI-GY (from `../`)
+
+EXTERNAL SOURCES:
+  TencentOpenAPI-GY:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TencentOpenAPI-GY: 4cd088156998b14b32ce54b336fcbdc0364f6c0e
+
+PODFILE CHECKSUM: 1f15bbcddc1e66958ba95791f67af4d26e273741
+
+COCOAPODS: 1.14.2
