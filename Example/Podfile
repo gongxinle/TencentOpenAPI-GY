@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'TencentOpenAPI-GY_Example' do
+  pod 'TencentOpenAPI-GY', :path => '../'
+
+  target 'TencentOpenAPI-GY_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
