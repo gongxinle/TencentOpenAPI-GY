@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'TencentOpenAPI-GY/Classes/**/*'
+  # s.source_files = 'TencentOpenAPI-GY/Classes/**/*'
   
   s.frameworks   = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony', 'WebKit'
   s.libraries             = 'iconv', 'sqlite3', 'stdc++', 'z'
