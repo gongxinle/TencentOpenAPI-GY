@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TencentOpenAPI-GY'
   s.version          = '3.5.14'
-  s.summary          = 'TencentOpenAPI person pod.'
+  s.summary          = 'TencentOpenAPI person pod. why doesn't tencent provide?'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://wiki.connect.qq.com'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'gxl' => 'gongxinle@gyyx.cn' }
+  s.author           = { 'gxl' => '549036031@qq.com' }
   s.source           = { :git => 'https://github.com/gongxinle/TencentOpenAPI-GY.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
