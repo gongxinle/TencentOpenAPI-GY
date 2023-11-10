@@ -10,6 +10,10 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+https://wiki.connect.qq.com/ 
+
+## Warning 
+LSApplicationQueriesSchemes  ->  you must fill in the mqqOpensdkSSoLogin scheme!!! if not,you will lose a lot of time. so Tencent's official documents is a shit.
 
 ## Installation
 
